@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	/* background-color: salmon; */
+	font-family: 'Quicksand', sans-serif;
+	/* min-height: 100vh; */
+	height: 20000px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #f9f5f2;
+}
+
+header.navbar-container{
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	margin-inline: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 1rem;
+	z-index: 9999;
+	/* display: inline; */
+	position: sticky;
+	top: 0;
+	background-color: #f9f5f2;
+
+}
+
+
+header.navbar-container .nav-list ul{
+	/* background-color: salmon; */
+	padding-left: 0;
+	display: flex;
+	gap: 2rem 1rem;
+	justify-content: center;
+}
+
+header.navbar-container .nav-list li{
+	list-style-type: none;
+}
+
+header.navbar-container .nav-list a{
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+	font-size: 1.05rem;
+	border-radius: 999px;
+	font-weight: 500;
+	color: black;
+	transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+	background-color: #5e7c60;
+	color: white;
+}
+
+main{
+	/* background-color: #d5d6c6; */
+	width: 100%;
+	max-width: 1200px;
+	margin-inline: auto;
+	/* display: flex; */
+	flex: 1;
+	padding: 0 4rem;
+	align-items: center;
+}
+
+main #hero{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	min-height: 100vh;
+	/* background-color: salmon; */
+}
+
+main .content-image img{
+	width: 300px;
+	min-width: 250px;
+	margin: auto;
+	border-radius: 100%;
+}
+
+main #hero .content-description{
+	flex: 1 1;
+}
+
+main #hero .content-description .title{
+	margin-block: 1rem;
+	font-size: 3.5rem;
+}
+
+main #hero .content-description p{
+	font-size: 1.2rem;
+	line-height: 1.7rem;
+}
+
+main #hero .content-description button{
+	padding: 0.8rem 2.5rem;
+	border: 3px solid transparent;
+	border-radius: 999px;
+	margin-block-start: 1rem;
+	background-color: #5e7c60;
+
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 700;
+	color: white;
+
+	cursor: pointer;
+	transition: all 0.15s ease-in;
+}
+
+main #hero .content-description button:hover{
+	border: 3px solid #5e7c60;
+	background-color: transparent;
+	color:  #5e7c60;
+}
+
+/* about me */
+main #about{
+	/* background-color: lightblue; */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+	/* scroll-margin-top: 120px; */
+}
+
+main #about h2.title {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #5e7c60;
+}
+
+main #about p{
+	max-width: 700px;
+	text-align: center;
+	line-height: 1.8;
+	color: #444;
+}
+
+/* skill */
+main #skills{
+	min-height: 100vh;
+	scroll-margin-top: 120px;
+}
+
+main #skills h2.title{
+	text-align: center;
+	font-size: 2rem;
+	color: #5e7c60;
+}
+
+main #skills p{
+	text-align: center;
+}
+
+main #skills .skill-container{
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	flex-wrap: wrap;
+	margin-top: 10rem;
+}
+
+main #skills .skill-container .skill-card{
+	flex: 1 1 250px;
+	background-color: white;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+main #projects{
+	/* background-color: salmon; */
+	scroll-margin-top: 120px;
+	height: 100vh;
+}
+
+
+
+main #projects{
+	/* background-color: salmon; */
+	padding: 4rem 1rem;
+}
+
+main #projects h2.title{
+	text-align: center;
+	font-size: 2rem;
+	color: #5e7c60;
+	margin-bottom: 0.5rem; */
+}
+
+main #projects > p{
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto 3rem;
+	line-height: 1.6;
+	color: #333;
+}
+
+.project-card{
+	display: flex ;
+	gap: 2rem;
+	align-items: center;
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+	margin-bottom: 2rem; */
+}
+
+.project-image{
+	flex: 1;
+}
+
+.project-image img{
+	width: 100%;
+	max-width: 350px;
+	border-radius: 0.75rem;
+	display: block;
+}
+
+.project-content{
+	flex: 2;
+}
+
+.project-content h3{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.project-status{
+	font-size: 0.9rem;
+	color: #5e7c60;
+	margin-bottom: 1rem;
+}
+
+.project-content p{
+	line-height: 1.6;
+	margin-bottom: 0.75rem;
+}
+
+main #contact{
+	/* background-color: blue; */
+	scroll-margin-top: 120px;
+}
